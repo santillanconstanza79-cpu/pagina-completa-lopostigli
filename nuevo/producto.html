@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Selva Negra - Lo'Postigli</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="menu">
+
+            <h2>Lo'Postigli</h2>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="index.html#productos">Productos</a>
+                <a href="tienda.html">🛒 Carrito</a>
+                <a href="index.html#contacto">Contacto</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="producto">
+
+
+            <div class="producto-imagen">
+                <img src="img/selva negra.jpg" alt="Selva Negra">
+            </div>
+
+
+            <div class="producto-info">
+
+                <h1>Selva Negra</h1>
+
+                <p class="descripcion">
+                    Deliciosa torta Selva Negra elaborada con
+                    chocolate, crema y cerezas.
+                </p>
+
+                <p class="precio">
+                    $18.000
+                </p>
+
+
+                <div class="cantidad">
+
+                    <label for="cantidad">
+                        Cantidad:
+                    </label>
+
+                    <button onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+
+                    <input 
+                        type="number"
+                        id="cantidad"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+
+                </div>
+
+                <button 
+                    class="boton-carrito"
+                    onclick="agregarAlCarrito()">
+
+                    Agregar al carrito 🛒
+
+                </button>
+
+                <a 
+                    href="index.html#productos"
+                    class="volver">
+
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
