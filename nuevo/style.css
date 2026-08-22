@@ -1,29 +1,16 @@
- html::before {
-
+html::before {
   position: fixed;
-
   inset: 0;
-
   z-index: -1;
-
   margin: auto;
-
   width: fit-content;
-
   height: fit-content;
-
   font-family: monospace;
-
   opacity: 0.6;
-
   background: rebeccapurple;
-
   color: white;
-
   padding: 4px 8px;
-
   border-radius: 4px;
-
 }
 
 .encabezado {
@@ -91,7 +78,6 @@ body{
     display: none;
 }
 
-
 .card {
     flex: 0 0 calc(33.333% - 17px);
 }
@@ -100,13 +86,11 @@ body{
     transform:translateY(-8px);
 }
 
-
 .card img{
     width:90%;
     height:270px;
     object-fit:cover;
 }
-
 
 .info{
     font-family: 'arial';
@@ -119,7 +103,6 @@ body{
     margin-bottom:10px;
     color:#444;
 }
-
 
 .info p{
     font-family: 'arial';
@@ -146,12 +129,19 @@ body{
 .menu {
   background-color:#FFFFFF ;
   font-family: 'Tempting';
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: center;
   gap: 150px;
   align-items: center;
   border-bottom: 2px solid black;
+}
+
+.menu-logo {
+  width: 112px;
+  height: 112px;
+  border-radius: 20%;
+  align-items: left;
 }
 
 h2 {
@@ -178,44 +168,6 @@ nav a:hover {
     color: white;
 }
 
-.tienda {
-    text-align: center;
-    background-color: #fff5ed;
-    padding: 60px 20px;
-    margin-top: 50px;
-    border-top: 2px solid #FF4500;
-}
-
-.tienda h1 {
-    font-family: Arial, sans-serif;
-    font-size: 40px;
-    color: #FF4500;
-    margin-bottom: 20px;
-}
-
-.tienda p {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 25px;
-}
-
-.tienda a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #d47100;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-.tienda a:hover {
-    background-color: #FF4500;
-    transform: scale(1.05);
-}
 
 .contacto {
     text-align: center;
@@ -273,8 +225,7 @@ nav a:hover {
     margin: 70px auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 70px;
+    gap: 80px;
 }
 
 .producto-imagen {
@@ -282,8 +233,8 @@ nav a:hover {
 }
 
 .producto-imagen img {
-    width: 100%;
-    height: 500px;
+    width: 90%;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -316,57 +267,24 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-.cantidad {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
+.producto-info button {
     font-family: Arial, sans-serif;
-}
-
-.cantidad label {
-    margin-right: 10px;
-}
-
-.cantidad button {
-    width: 35px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     border: none;
-    border-radius: 50%;
+    border-radius: 5%;
     background-color: #d47100;
     color: white;
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
+    gap: 25px;
 }
 
-.cantidad button:hover {
-    background-color: #FF4500;
-}
-
-.cantidad input {
-    width: 50px;
-    height: 35px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-.boton-carrito {
-    border: none;
-    background-color: #d47100;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.boton-carrito:hover {
-    background-color: #FF4500;
-    transform: scale(1.05);
+.producto-info a {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #000000;
 }
 
 .volver {
